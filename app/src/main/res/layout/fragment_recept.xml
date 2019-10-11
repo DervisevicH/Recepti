@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/layout_padding">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="3"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/my_custom_drawable">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:id="@+id/imgSlika"
+                ></ImageView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical"
+
+                >
+
+                <TextView
+                    android:id="@+id/txtNaziv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hotel Seawoods, Mahalaxmi"
+                    android:textColor="@color/icons"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/txtVrijemeKuhanja"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="20% Cashback"
+                    android:textColor="@color/icons"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                   />
+
+                <TextView
+                    android:id="@+id/txtLevel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/icons"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+
+                    ></TextView>
+
+            </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tab_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/primary"
+                app:tabTextColor="@color/primary_text"
+                app:tabSelectedTextColor="@color/icons"
+                ></com.google.android.material.tabs.TabLayout>
+
+
+            <androidx.viewpager.widget.ViewPager
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/viewPager">
+
+            </androidx.viewpager.widget.ViewPager>
+        </LinearLayout>
+
+    </LinearLayout>
+<com.google.android.material.floatingactionbutton.FloatingActionButton
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom|end"
+    android:padding="@dimen/cardview_default_radius"
+    android:src="@drawable/ic_favorites"
+    android:backgroundTint="@color/primary"
+
+    android:id="@+id/fabAdd"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

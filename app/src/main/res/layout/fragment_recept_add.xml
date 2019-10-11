@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent" android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:padding="@dimen/layout_padding">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:id="@+id/imgView"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnDodajSliku"
+            android:text="Dodaj sliku"
+            android:backgroundTint="@color/accent"
+            />
+
+
+       <Spinner
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/spinerKategorija"
+           >
+       </Spinner>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:padding="8dp"
+        android:text="Odaberite level"
+        android:textColor="@color/secondary_text"
+        android:textSize="14sp"></androidx.appcompat.widget.AppCompatTextView>
+       <RadioGroup
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content" android:orientation="horizontal"
+           android:id="@+id/radioGroup"
+           android:layout_gravity="center_horizontal"
+           android:gravity="center_horizontal"
+
+           >
+
+           <RadioButton
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Početni"
+               android:id="@+id/radioButtonPocetni"
+               android:textColor="@color/primary"/>
+           <RadioButton
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Srednji"
+               android:id="@+id/radioButtonSrednji"
+               android:textColor="@color/primary"/>
+           <RadioButton
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Teški"
+               android:id="@+id/radioButtonTeski"
+               android:textColor="@color/primary"/>
+       </RadioGroup>
+        <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Naziv recepta">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/inputNaziv"/>
+    </com.google.android.material.textfield.TextInputLayout>
+       <com.google.android.material.textfield.TextInputLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:hint="Vrijeme kuhanja">
+           <com.google.android.material.textfield.TextInputEditText
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/inputVrijemeKuhanja"/>
+       </com.google.android.material.textfield.TextInputLayout>
+       <com.google.android.material.textfield.TextInputLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:hint="Sastojci">
+           <com.google.android.material.textfield.TextInputEditText
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/inputSastojci"
+               android:inputType="textMultiLine"
+               android:lines="8"
+               android:minLines="5"
+               android:gravity="top|left"/>
+       </com.google.android.material.textfield.TextInputLayout>
+       <com.google.android.material.textfield.TextInputLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:hint="Opis recepta">
+           <com.google.android.material.textfield.TextInputEditText
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/inputOpisRecepta"
+               android:inputType="textMultiLine"
+               android:lines="8"
+               android:minLines="6"
+               android:gravity="top|left"/>
+       </com.google.android.material.textfield.TextInputLayout>
+       <Button
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/btnDodajRecept"
+           android:text="Dodaj"
+           android:background="@color/accent"
+           android:textColor="@color/icons"/>
+
+   </LinearLayout>
+
+
+</ScrollView>

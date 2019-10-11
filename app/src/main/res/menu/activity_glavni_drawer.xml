@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_m"
+            android:title="Početna" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_favorites_m"
+            android:title="Favoriti" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_category_mn"
+            android:title="Kategorije" />
+        <item
+            android:id="@+id/nav_tools"
+            android:icon="@drawable/ic_add_m"
+            android:title="Novi recept" />
+
+    </group>
+
+    <item android:title="...">
+        <menu>
+
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_logout_m"
+                android:title="Odjavi se" />
+        </menu>
+    </item>
+
+</menu>

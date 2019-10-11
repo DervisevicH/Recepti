@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/layout_padding">
+    <SearchView
+        android:id="@+id/txtPretraga"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textNoSuggestions|textVisiblePassword"
+        android:hint="Naziv recepta"
+        android:text=""
+        />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lvRecepti"
+        android:layout_below="@+id/txtPretraga"
+        android:divider="@color/primary"
+        android:dividerHeight="1dp"
+        ></ListView>
+
+</RelativeLayout>
